@@ -27,7 +27,7 @@ public class FunctionTest {
     private static Logarithm mockedLogarithm10;
 
     private static Sinus sinus;
-    private static Cosinus cosinus;
+    private static Tangens tangens;
     private static NaturalLogarithm naturalLogarithm;
     private static Logarithm logarithm2;
     private static Logarithm logarithm3;
@@ -51,7 +51,8 @@ public class FunctionTest {
         sinus = new Sinus();
         sinus.setN(100);
 
-        cosinus = new Cosinus(sinus);
+        Cosinus cosinus = new Cosinus(sinus);
+        tangens = new Tangens(sinus, cosinus);
 
         naturalLogarithm = new NaturalLogarithm();
         naturalLogarithm.setN(100);
@@ -108,6 +109,86 @@ public class FunctionTest {
     void testMock(double value, double expected) {
 
         Function function = new Function(mockedSinus, mockedTangens, mockedNaturalLogarithm, mockedLogarithm2, mockedLogarithm3, mockedLogarithm5, mockedLogarithm10);
+        Assertions.assertEquals(expected, function.calculate(value), epsilon);
+    }
+
+    @ParameterizedTest
+    @CsvFileSource(resources = "/csv/function.csv")
+    void testSin(double value, double expected) {
+        Function function = new Function(sinus, mockedTangens, mockedNaturalLogarithm,
+                mockedLogarithm2, mockedLogarithm3, mockedLogarithm5, mockedLogarithm10);
+        Assertions.assertEquals(expected, function.calculate(value), epsilon);
+    }
+
+    @ParameterizedTest
+    @CsvFileSource(resources = "/csv/function.csv")
+    void testTan(double value, double expected) {
+        Function function = new Function(mockedSinus, tangens, mockedNaturalLogarithm,
+                mockedLogarithm2, mockedLogarithm3, mockedLogarithm5, mockedLogarithm10);
+        Assertions.assertEquals(expected, function.calculate(value), epsilon);
+    }
+
+    @ParameterizedTest
+    @CsvFileSource(resources = "/csv/function.csv")
+    void testSinAndTan(double value, double expected) {
+        Function function = new Function(sinus, tangens, mockedNaturalLogarithm,
+                mockedLogarithm2, mockedLogarithm3, mockedLogarithm5, mockedLogarithm10);
+        Assertions.assertEquals(expected, function.calculate(value), epsilon);
+    }
+
+    @ParameterizedTest
+    @CsvFileSource(resources = "/csv/function.csv")
+    void testNaturalLog(double value, double expected) {
+        Function function = new Function(mockedSinus, mockedTangens, naturalLogarithm,
+                mockedLogarithm2, mockedLogarithm3, mockedLogarithm5, mockedLogarithm10);
+        Assertions.assertEquals(expected, function.calculate(value), epsilon);
+    }
+
+    @ParameterizedTest
+    @CsvFileSource(resources = "/csv/function.csv")
+    void testLog2(double value, double expected) {
+        Function function = new Function(mockedSinus, mockedTangens, mockedNaturalLogarithm,
+                logarithm2, mockedLogarithm3, mockedLogarithm5, mockedLogarithm10);
+        Assertions.assertEquals(expected, function.calculate(value), epsilon);
+    }
+
+    @ParameterizedTest
+    @CsvFileSource(resources = "/csv/function.csv")
+    void testLog3(double value, double expected) {
+        Function function = new Function(mockedSinus, mockedTangens, mockedNaturalLogarithm,
+                mockedLogarithm2, logarithm3, mockedLogarithm5, mockedLogarithm10);
+        Assertions.assertEquals(expected, function.calculate(value), epsilon);
+    }
+
+    @ParameterizedTest
+    @CsvFileSource(resources = "/csv/function.csv")
+    void testLog10(double value, double expected) {
+        Function function = new Function(mockedSinus, mockedTangens, mockedNaturalLogarithm,
+                mockedLogarithm2, mockedLogarithm3, mockedLogarithm5, logarithm10);
+        Assertions.assertEquals(expected, function.calculate(value), epsilon);
+    }
+
+    @ParameterizedTest
+    @CsvFileSource(resources = "/csv/function.csv")
+    void testAllLogs(double value, double expected) {
+        Function function = new Function(mockedSinus, mockedTangens, naturalLogarithm,
+                logarithm2, logarithm3, logarithm5, logarithm10);
+        Assertions.assertEquals(expected, function.calculate(value), epsilon);
+    }
+
+    @ParameterizedTest
+    @CsvFileSource(resources = "/csv/function.csv")
+    void testAllTrig(double value, double expected) {
+        Function function = new Function(sinus, tangens, mockedNaturalLogarithm,
+                mockedLogarithm2, mockedLogarithm3, mockedLogarithm5, mockedLogarithm10);
+        Assertions.assertEquals(expected, function.calculate(value), epsilon);
+    }
+
+    @ParameterizedTest
+    @CsvFileSource(resources = "/csv/function.csv")
+    void testAll(double value, double expected) {
+        Function function = new Function(sinus, tangens, naturalLogarithm,
+                logarithm2, logarithm3, logarithm5, logarithm10);
         Assertions.assertEquals(expected, function.calculate(value), epsilon);
     }
 

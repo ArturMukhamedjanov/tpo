@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="FunctionTest" time="0.775" tests="25" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="FunctionTest" time="1.02" tests="275" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="22"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/22.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/arturmuch/Desktop/studying/tpo/lab2/target/surefire/surefirebooter-20250322140519727_3.jar /Users/arturmuch/Desktop/studying/tpo/lab2/target/surefire 2025-03-22T14-05-19_691-jvmRun1 surefire-20250322140519727_1tmp surefire_0-20250322140519727_2tmp"/>
+    <property name="sun.java.command" value="/Users/arturmuch/Desktop/studying/tpo/lab2/target/surefire/surefirebooter-20250411004052908_3.jar /Users/arturmuch/Desktop/studying/tpo/lab2/target/surefire 2025-04-11T00-40-52_863-jvmRun1 surefire-20250411004052908_1tmp surefire_0-20250411004052908_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/arturmuch/Desktop/studying/tpo/lab2/target/test-classes:/Users/arturmuch/Desktop/studying/tpo/lab2/target/classes:/Users/arturmuch/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/arturmuch/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/Users/arturmuch/.m2/repository/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar:/Users/arturmuch/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/arturmuch/.m2/repository/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/Users/arturmuch/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/Users/arturmuch/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/arturmuch/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.0/junit-jupiter-params-5.10.0.jar:/Users/arturmuch/.m2/repository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar:/Users/arturmuch/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/arturmuch/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/arturmuch/.m2/repository/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.jar:/Users/arturmuch/.m2/repository/net/bytebuddy/byte-buddy/1.14.9/byte-buddy-1.14.9.jar:/Users/arturmuch/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.9/byte-buddy-agent-1.14.9.jar:/Users/arturmuch/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/arturmuch/.m2/repository/org/jetbrains/annotations/24.0.0/annotations-24.0.0.jar:/Users/arturmuch/.m2/repository/org/apache/commons/commons-csv/1.9.0/commons-csv-1.9.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -29,7 +29,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/arturmuch/Desktop/studying/tpo/lab2/target/surefire/surefirebooter-20250322140519727_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/arturmuch/Desktop/studying/tpo/lab2/target/surefire/surefirebooter-20250411004052908_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="22.0.2"/>
     <property name="user.name" value="arturmuch"/>
@@ -56,7 +56,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="java.class.version" value="66.0"/>
   </properties>
-  <testcase name="testMock(double, double)[1]" classname="FunctionTest" time="0.024">
+  <testcase name="testSinAndTan(double, double)[1]" classname="FunctionTest" time="0.032">
     <system-err><![CDATA[SLF4J: No SLF4J providers were found.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
@@ -66,28 +66,278 @@ WARNING: If a serviceability tool is not in use, please run with -Djdk.instrumen
 WARNING: Dynamic loading of agents will be disallowed by default in a future release
 ]]></system-err>
   </testcase>
-  <testcase name="testMock(double, double)[2]" classname="FunctionTest" time="0.004"/>
+  <testcase name="testSinAndTan(double, double)[2]" classname="FunctionTest" time="0.002"/>
+  <testcase name="testSinAndTan(double, double)[3]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testSinAndTan(double, double)[4]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testSinAndTan(double, double)[5]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testSinAndTan(double, double)[6]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testSinAndTan(double, double)[7]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testSinAndTan(double, double)[8]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testSinAndTan(double, double)[9]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testSinAndTan(double, double)[10]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testSinAndTan(double, double)[11]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testSinAndTan(double, double)[12]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testSinAndTan(double, double)[13]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testSinAndTan(double, double)[14]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testSinAndTan(double, double)[15]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testSinAndTan(double, double)[16]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testSinAndTan(double, double)[17]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testSinAndTan(double, double)[18]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testSinAndTan(double, double)[19]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testSinAndTan(double, double)[20]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testSinAndTan(double, double)[21]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testSinAndTan(double, double)[22]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testSinAndTan(double, double)[23]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testSinAndTan(double, double)[24]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testSinAndTan(double, double)[25]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAll(double, double)[1]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testAll(double, double)[2]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAll(double, double)[3]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAll(double, double)[4]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAll(double, double)[5]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testAll(double, double)[6]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAll(double, double)[7]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAll(double, double)[8]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testAll(double, double)[9]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testAll(double, double)[10]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAll(double, double)[11]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAll(double, double)[12]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testAll(double, double)[13]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAll(double, double)[14]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAll(double, double)[15]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAll(double, double)[16]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testAll(double, double)[17]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAll(double, double)[18]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAll(double, double)[19]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAll(double, double)[20]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testAll(double, double)[21]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAll(double, double)[22]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAll(double, double)[23]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAll(double, double)[24]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testAll(double, double)[25]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testSin(double, double)[1]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testSin(double, double)[2]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testSin(double, double)[3]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testSin(double, double)[4]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testSin(double, double)[5]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testSin(double, double)[6]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testSin(double, double)[7]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testSin(double, double)[8]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testSin(double, double)[9]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testSin(double, double)[10]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testSin(double, double)[11]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testSin(double, double)[12]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testSin(double, double)[13]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testSin(double, double)[14]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testSin(double, double)[15]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testSin(double, double)[16]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testSin(double, double)[17]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testSin(double, double)[18]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testSin(double, double)[19]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testSin(double, double)[20]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testSin(double, double)[21]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testSin(double, double)[22]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testSin(double, double)[23]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testSin(double, double)[24]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testSin(double, double)[25]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testTan(double, double)[1]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testTan(double, double)[2]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testTan(double, double)[3]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testTan(double, double)[4]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testTan(double, double)[5]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testTan(double, double)[6]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testTan(double, double)[7]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testTan(double, double)[8]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testTan(double, double)[9]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testTan(double, double)[10]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testTan(double, double)[11]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testTan(double, double)[12]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testTan(double, double)[13]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testTan(double, double)[14]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testTan(double, double)[15]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testTan(double, double)[16]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testTan(double, double)[17]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testTan(double, double)[18]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testTan(double, double)[19]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testTan(double, double)[20]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testTan(double, double)[21]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testTan(double, double)[22]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testTan(double, double)[23]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testTan(double, double)[24]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testTan(double, double)[25]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testAllLogs(double, double)[1]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAllLogs(double, double)[2]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAllLogs(double, double)[3]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testAllLogs(double, double)[4]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAllLogs(double, double)[5]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAllLogs(double, double)[6]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testAllLogs(double, double)[7]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAllLogs(double, double)[8]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAllLogs(double, double)[9]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAllLogs(double, double)[10]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAllLogs(double, double)[11]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testAllLogs(double, double)[12]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAllLogs(double, double)[13]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAllLogs(double, double)[14]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAllLogs(double, double)[15]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAllLogs(double, double)[16]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testAllLogs(double, double)[17]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAllLogs(double, double)[18]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAllLogs(double, double)[19]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testAllLogs(double, double)[20]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAllLogs(double, double)[21]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAllLogs(double, double)[22]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testAllLogs(double, double)[23]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAllLogs(double, double)[24]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAllLogs(double, double)[25]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testAllTrig(double, double)[1]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAllTrig(double, double)[2]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAllTrig(double, double)[3]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testAllTrig(double, double)[4]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAllTrig(double, double)[5]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAllTrig(double, double)[6]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testAllTrig(double, double)[7]" classname="FunctionTest" time="0.002"/>
+  <testcase name="testAllTrig(double, double)[8]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testAllTrig(double, double)[9]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAllTrig(double, double)[10]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAllTrig(double, double)[11]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testAllTrig(double, double)[12]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAllTrig(double, double)[13]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAllTrig(double, double)[14]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testAllTrig(double, double)[15]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAllTrig(double, double)[16]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAllTrig(double, double)[17]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testAllTrig(double, double)[18]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAllTrig(double, double)[19]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAllTrig(double, double)[20]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testAllTrig(double, double)[21]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testAllTrig(double, double)[22]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAllTrig(double, double)[23]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testAllTrig(double, double)[24]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testAllTrig(double, double)[25]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog10(double, double)[1]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog10(double, double)[2]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog10(double, double)[3]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testLog10(double, double)[4]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog10(double, double)[5]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog10(double, double)[6]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testLog10(double, double)[7]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog10(double, double)[8]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testLog10(double, double)[9]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testLog10(double, double)[10]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog10(double, double)[11]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testLog10(double, double)[12]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog10(double, double)[13]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog10(double, double)[14]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testLog10(double, double)[15]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testLog10(double, double)[16]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog10(double, double)[17]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog10(double, double)[18]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testLog10(double, double)[19]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog10(double, double)[20]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testLog10(double, double)[21]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog10(double, double)[22]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog10(double, double)[23]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testLog10(double, double)[24]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog10(double, double)[25]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog2(double, double)[1]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testLog2(double, double)[2]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog2(double, double)[3]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testLog2(double, double)[4]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testLog2(double, double)[5]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog2(double, double)[6]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testLog2(double, double)[7]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog2(double, double)[8]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog2(double, double)[9]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testLog2(double, double)[10]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testLog2(double, double)[11]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog2(double, double)[12]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testLog2(double, double)[13]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog2(double, double)[14]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog2(double, double)[15]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testLog2(double, double)[16]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog2(double, double)[17]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog2(double, double)[18]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testLog2(double, double)[19]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog2(double, double)[20]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog2(double, double)[21]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testLog2(double, double)[22]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog2(double, double)[23]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog2(double, double)[24]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog2(double, double)[25]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog3(double, double)[1]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testLog3(double, double)[2]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog3(double, double)[3]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testLog3(double, double)[4]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog3(double, double)[5]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog3(double, double)[6]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testLog3(double, double)[7]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog3(double, double)[8]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testLog3(double, double)[9]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog3(double, double)[10]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog3(double, double)[11]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testLog3(double, double)[12]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog3(double, double)[13]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testLog3(double, double)[14]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog3(double, double)[15]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog3(double, double)[16]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testLog3(double, double)[17]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog3(double, double)[18]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testLog3(double, double)[19]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog3(double, double)[20]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog3(double, double)[21]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog3(double, double)[22]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog3(double, double)[23]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testLog3(double, double)[24]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testLog3(double, double)[25]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testMock(double, double)[1]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testMock(double, double)[2]" classname="FunctionTest" time="0.0"/>
   <testcase name="testMock(double, double)[3]" classname="FunctionTest" time="0.001"/>
-  <testcase name="testMock(double, double)[4]" classname="FunctionTest" time="0.001"/>
-  <testcase name="testMock(double, double)[5]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testMock(double, double)[4]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testMock(double, double)[5]" classname="FunctionTest" time="0.0"/>
   <testcase name="testMock(double, double)[6]" classname="FunctionTest" time="0.001"/>
-  <testcase name="testMock(double, double)[7]" classname="FunctionTest" time="0.001"/>
-  <testcase name="testMock(double, double)[8]" classname="FunctionTest" time="0.001"/>
-  <testcase name="testMock(double, double)[9]" classname="FunctionTest" time="0.0"/>
-  <testcase name="testMock(double, double)[10]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testMock(double, double)[7]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testMock(double, double)[8]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testMock(double, double)[9]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testMock(double, double)[10]" classname="FunctionTest" time="0.0"/>
   <testcase name="testMock(double, double)[11]" classname="FunctionTest" time="0.001"/>
-  <testcase name="testMock(double, double)[12]" classname="FunctionTest" time="0.001"/>
-  <testcase name="testMock(double, double)[13]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testMock(double, double)[12]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testMock(double, double)[13]" classname="FunctionTest" time="0.0"/>
   <testcase name="testMock(double, double)[14]" classname="FunctionTest" time="0.001"/>
   <testcase name="testMock(double, double)[15]" classname="FunctionTest" time="0.0"/>
   <testcase name="testMock(double, double)[16]" classname="FunctionTest" time="0.0"/>
-  <testcase name="testMock(double, double)[17]" classname="FunctionTest" time="0.001"/>
-  <testcase name="testMock(double, double)[18]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testMock(double, double)[17]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testMock(double, double)[18]" classname="FunctionTest" time="0.0"/>
   <testcase name="testMock(double, double)[19]" classname="FunctionTest" time="0.001"/>
-  <testcase name="testMock(double, double)[20]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testMock(double, double)[20]" classname="FunctionTest" time="0.0"/>
   <testcase name="testMock(double, double)[21]" classname="FunctionTest" time="0.001"/>
   <testcase name="testMock(double, double)[22]" classname="FunctionTest" time="0.0"/>
   <testcase name="testMock(double, double)[23]" classname="FunctionTest" time="0.0"/>
-  <testcase name="testMock(double, double)[24]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testMock(double, double)[24]" classname="FunctionTest" time="0.001"/>
   <testcase name="testMock(double, double)[25]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testNaturalLog(double, double)[1]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testNaturalLog(double, double)[2]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testNaturalLog(double, double)[3]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testNaturalLog(double, double)[4]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testNaturalLog(double, double)[5]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testNaturalLog(double, double)[6]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testNaturalLog(double, double)[7]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testNaturalLog(double, double)[8]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testNaturalLog(double, double)[9]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testNaturalLog(double, double)[10]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testNaturalLog(double, double)[11]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testNaturalLog(double, double)[12]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testNaturalLog(double, double)[13]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testNaturalLog(double, double)[14]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testNaturalLog(double, double)[15]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testNaturalLog(double, double)[16]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testNaturalLog(double, double)[17]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testNaturalLog(double, double)[18]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testNaturalLog(double, double)[19]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testNaturalLog(double, double)[20]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testNaturalLog(double, double)[21]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testNaturalLog(double, double)[22]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testNaturalLog(double, double)[23]" classname="FunctionTest" time="0.001"/>
+  <testcase name="testNaturalLog(double, double)[24]" classname="FunctionTest" time="0.0"/>
+  <testcase name="testNaturalLog(double, double)[25]" classname="FunctionTest" time="0.001"/>
 </testsuite>
